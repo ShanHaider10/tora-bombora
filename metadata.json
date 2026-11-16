@@ -1,0 +1,6 @@
+{
+  "name": "Tora Bombora — Music Festival Aotearoa",
+  "description": "Tora Bombora is a celebration of music, community, wellness, and coastal nature on the shoreline of Aotearoa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

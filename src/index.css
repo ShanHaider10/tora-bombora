@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Kaushan Script', cursive;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F5F0E3;
+    color: #083543;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle sandy coastal grain paper texture */
+.coastal-paper {
+  background-color: #F5F0E3;
+  background-image:
+    radial-gradient(rgba(10, 77, 97, 0.055) 1px, transparent 0),
+    radial-gradient(rgba(198, 152, 74, 0.06) 1px, transparent 0);
+  background-size: 26px 26px, 19px 19px;
+  background-position: 0 0, 9px 11px;
+}
+
+/* Deep ocean canvas texture */
+.ocean-canvas {
+  background: linear-gradient(135deg, #032B38 0%, #074659 55%, #043241 100%);
+}
+
+/* Distressed brush-edge photo frame */
+.brush-frame {
+  box-shadow: 0 14px 30px -10px rgba(4, 44, 57, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
